@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Name: Abdul Muqsit Chohan
+        ID: WMA-342415 -->
+
+        <!-- PROJECT 01
+        Assignment Title: Interactive Color Picker Boxes
+
+        Objective:
+        The goal of this assignment is to practice DOM manipulation and styling using HTML, CSS, and JavaScript. You will build a simple web page with multiple color boxes. When a user clicks on any color box, the background color of the entire page should change to that color.
+
+        nstructions:
+
+        1. Use only HTML, CSS, and JavaScript for this task.
+        2. Create a web page that displays multiple colored boxes (at least 6 different colors).
+        3. Each box should have a fixed size (e.g., 100px by 100px) and a distinct background color.
+        4. When a user clicks on a box, the background color of the entire web page should change to match the clicked box.
+        5. Add hover effects to the boxes using CSS for better user experience.
+        6. Make sure your code is clean, well-indented, and includes comments where necessary. -->
+        
+
+        <div class="calculator">
+
+            <div class="heading">
+                Calculator <\>
+            </div>
+            <form>
+                <div class="display">
+                    <input type="text" name="display">
+                </div>
+
+                <div>
+                    <input type="button" value="AC" onclick=" display.value = ''" class="com">
+                    <input type="button" value="DE" onclick=" display.value = display.value.toString().slice(0,-1)" class="com">
+                    <input type="button" value="." onclick=" display.value += '.'" class="com">
+                    <input type="button" value="/" onclick=" display.value += '/'" class="com">
+                </div>
+
+                <div>
+                    <input type="button" value="7" onclick=" display.value += '7'" >
+                    <input type="button" value="8" onclick=" display.value += '8'">
+                    <input type="button" value="9" onclick=" display.value += '9'">
+                    <input type="button" value="*" onclick=" display.value += '*'" class="com">
+                </div>
+
+                <div>
+                    <input type="button" value="4" onclick=" display.value += '4'">
+                    <input type="button" value="5" onclick=" display.value += '5'">
+                    <input type="button" value="6" onclick=" display.value += '6'">
+                    <input type="button" value="-" onclick=" display.value += '-'" class="com">
+                </div>
+
+                <div>
+                    <input type="button" value="1" onclick=" display.value += '1'">
+                    <input type="button" value="2" onclick=" display.value += '2'">
+                    <input type="button" value="3" onclick=" display.value += '3'">
+                    <input type="button" value="+" onclick=" display.value += '+'" class="com">
+                </div>
+
+                <div>
+                    <input type="button" value="00" onclick=" display.value += '00'">
+                    <input type="button" value="0" onclick=" display.value += '0'">
+                    <input type="button" value="=" onclick=" display.value = eval(display.value)" class="equal" class="com">
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
